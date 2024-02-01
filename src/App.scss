@@ -1,0 +1,99 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+
+  .title-container {
+
+    h1 {}
+  
+  }
+
+  .game-container {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    height: 200px;
+
+    .player-section, .computer-section {
+
+      .player-score, .computer-score {
+        width: 200px;
+        background-color: white;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h3 {
+          padding: 20px 0;
+          background-color: yellow;
+          width: 100%;
+          text-align: center;
+        }
+      }
+
+      .player-hand, .computer-hand {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: white;
+        width: 200px;
+        height: 200px;
+        border-radius: 5px;
+
+        p {}
+
+      }
+    }
+
+    .results-section {
+    
+      color: white;
+
+      .results-winner {
+        font-size: 24px;
+      }
+      .results-message {}
+
+    }
+  }
+
+
+  .btns-container {
+    .btns-options-container {
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+
+      .btn-option {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+  
+    }
+
+    .btns-play-container {
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      #btn-play {}
+    }
+
+  }
+
+
+}
