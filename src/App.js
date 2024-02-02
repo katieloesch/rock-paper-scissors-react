@@ -1,10 +1,26 @@
+import { useState } from 'react';
+import BtnOption from './components/BtnOption/BtnOption';
+import PlayerHand from './components/PlayerHand/PlayerHand';
+import ComputerHand from './components/ComputerHand/ComputerHand';
+
+import { options } from './options';
+
 import './App.scss';
-import { FaRegHandPaper, FaRegHandRock, FaRegHandScissors } from 'react-icons/fa'
 
 function App() {
 
-  const options = ['rock', 'paper', 'scissors']
+  const [playerHand, setPlayerHand] = useState(null);
+  const [computerHand, setComputerHand] = useState(null);
 
+  const generateComputerHand = () => {
+     setComputerHand(options[Math.floor(Math.random()*3)].name)
+  }
+
+  const play = () => {
+    generateComputerHand();
+    console.log(computerHand)
+
+  }
 
   return (
     <div className="App">
@@ -12,7 +28,6 @@ function App() {
       <div className='title-container'>
         <h1>Rock Paper Scissors</h1>
       </div>
-
 
       <div className='game-container'>
         
@@ -22,14 +37,12 @@ function App() {
             <p>Score: 0</p>
           </div> 
 
-          <div className='computer-hand'>
-            <FaRegHandScissors size={60} />
-            <p>Scissors</p>
-          </div>
+          <ComputerHand computerHand={computerHand} />
+
         </div>
 
         <div className='results-section'>
-          <p className='results-winner'> Rock winst!</p>
+          <p className='results-winner'> Rock wins!</p>
           <p className='results-message'> Rock beats scissors!</p>
         </div>
 
@@ -40,33 +53,19 @@ function App() {
             <p>score: 0</p>
           </div>
 
-          <div className='player-hand'>
-            <FaRegHandPaper size={60} />
-            <p>Paper</p>
-          </div>
+          <PlayerHand playerHand={playerHand} />
         </div>
       
       </div>
 
       <div className='btns-container'>
         <div className='btns-options-container'>
-          <button className='btn-option btn' id='rock'>
-            <FaRegHandRock size={60} />
-            Rock
-          </button>
-
-          <button className='btn-option btn' id='paper'>
-            <FaRegHandPaper size={60} />
-            Paper
-          </button>
-
-          <button className='btn-option btn' id='scissors'>
-            <FaRegHandScissors size={60} />
-            Scissors
-          </button>
+          {options.map((option) => {
+            return (<BtnOption option={option.name} key={`btn-${option.name}`} setPlayerHand={setPlayerHand} playerHand={playerHand} />)
+          })}
         </div>
         <div className='btns-play-container'>
-          <button className='btn' id='btn-play'>Play</button>
+          <button className='btn' id='btn-play' onClick={play}>Play</button>
         </div>
       </div>  
       
