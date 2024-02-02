@@ -3,22 +3,20 @@ import { options } from '../../options'
 
 import './../../App.scss'
 
-const ComputerHand = ({ computerHand }) => {
-
+const HandDisplay = ({ hand, type }) => {
     let display;
 
-    if (computerHand) {
-        display = options.find((e) => (e.name === computerHand))
+    if (hand) {
+        display = options.find((e) => (e.name === hand))
     }
 
-     
 
   return (
-    <div className='computer-hand'>
+    <div className={`${type}-hand`}>
         {display && display.icon}
         <p>{display && display.label}</p>
     </div>
   )
 }
 
-export default ComputerHand
+export default HandDisplay

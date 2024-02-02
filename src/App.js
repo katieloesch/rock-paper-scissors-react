@@ -1,16 +1,16 @@
 import { useState } from 'react';
-import BtnOption from './components/BtnOption/BtnOption';
-import PlayerHand from './components/PlayerHand/PlayerHand';
-import ComputerHand from './components/ComputerHand/ComputerHand';
-
 import { options } from './options';
+import BtnOption from './components/BtnOption/BtnOption';
+import HandDisplay from './components/HandDisplay/HandDisplay';
 
 import './App.scss';
+import ScoreDisplay from './components/ScoreDisplay/ScoreDisplay';
 
 function App() {
 
   const [playerHand, setPlayerHand] = useState(null);
   const [computerHand, setComputerHand] = useState(null);
+
 
   const generateComputerHand = () => {
      setComputerHand(options[Math.floor(Math.random()*3)].name)
@@ -32,13 +32,8 @@ function App() {
       <div className='game-container'>
         
         <div className='computer-section'>
-          <div className='computer-score'>
-            <h3>Computer</h3>
-            <p>Score: 0</p>
-          </div> 
-
-          <ComputerHand computerHand={computerHand} />
-
+          <ScoreDisplay type='computer' />
+          <HandDisplay type='computer' hand={computerHand} />
         </div>
 
         <div className='results-section'>
@@ -46,29 +41,26 @@ function App() {
           <p className='results-message'> Rock beats scissors!</p>
         </div>
 
-        
-        <div className='player-section'>
-          <div className='player-score'>
-            <h3>Player</h3>
-            <p>score: 0</p>
-          </div>
-
-          <PlayerHand playerHand={playerHand} />
+        <div className='player-section'> 
+          <ScoreDisplay type='player' />
+          <HandDisplay type='player' hand={playerHand} />
         </div>
       
       </div>
 
       <div className='btns-container'>
+
         <div className='btns-options-container'>
           {options.map((option) => {
             return (<BtnOption option={option.name} key={`btn-${option.name}`} setPlayerHand={setPlayerHand} playerHand={playerHand} />)
           })}
         </div>
+
         <div className='btns-play-container'>
           <button className='btn' id='btn-play' onClick={play}>Play</button>
         </div>
+
       </div>  
-      
       
     </div>
   );
