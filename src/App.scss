@@ -51,9 +51,41 @@
         height: 200px;
         border-radius: 5px;
 
+       
+
+        .player-shake {
+          animation: playerShake 0.8s ease-in-out infinite;
+        }
+
+        .comp-shake {
+          animation: compShake 0.8s ease-in-out infinite;
+        }
+        
+        @keyframes compShake {
+          0%,
+          100% {
+            transform: rotate(100deg);
+          }
+          50% {
+            transform: rotate(80deg);
+          }
+        }
+        @keyframes playerShake {
+          0%,
+          100% {
+            transform: scaleY(-1) rotate(-80deg);
+          }
+          50% {
+            transform: scaleY(-1) rotate(-100deg);
+          }
+        }
+        
+
         p {}
 
       }
+    
+     
     }
 
     .results-section {
@@ -61,6 +93,12 @@
       color: white;
       text-align: center;
       padding: 10px;
+
+      .timer {
+        color: white;
+        font-size: 200px;
+
+      }
 
       .results-winner {
         font-size: 32px;
