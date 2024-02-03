@@ -6,17 +6,20 @@ import HandDisplay from './components/HandDisplay/HandDisplay';
 import BtnOption from './components/BtnOption/BtnOption';
 
 import './App.scss';
+import Results from './components/Results/Results';
 
 function App() {
 
   const [playerHand, setPlayerHand] = useState(null);
+  const [selectedHand, setSelectedHand] = useState(null);
   const [computerHand, setComputerHand] = useState(null);
   const [timer, setTimer] = useState(3);
-  const [runTimer, setRunTimer] = useState(false)
-  const [results, setResults] = useState({
-    winner: '',
-    msg: ''
-  })
+  const [runTimer, setRunTimer] = useState(false);
+  const [results, setResults] = useState(null);
+  const [score, setScore] = useState({
+    computer: 0,
+    player: 0
+  });
 
   useEffect(() => {
 
@@ -27,8 +30,7 @@ function App() {
     } else if (runTimer && timer < 1) {
       setRunTimer(false);
       setTimer(3);
-      play()
-      console.log(results)
+      play();
     }
 
   }, [runTimer, timer])
@@ -38,33 +40,39 @@ function App() {
   }
 
   const start = () => {
-    generateComputerHand();
-    setRunTimer(true)
+
+    if (selectedHand) {
+      setResults(null)
+      setPlayerHand(selectedHand)
+      generateComputerHand();
+      setRunTimer(true)
+    }
+
 
   }
 
   const play = () => {
   
     if (playerHand === 'rock' && computerHand === 'paper') {
-      setResults({winner: 'Computer', msg: 'Paper beats Rock!'})
+      setResults({winner: 'Computer wins!', msg: 'Paper beats Rock!'})
    
     } else if (playerHand === 'rock' && computerHand === 'scissors') {
-      setResults({winner: 'Player', msg: 'Rock beats Scissors!'})
+      setResults({winner: 'Player wins!', msg: 'Rock beats Scissors!'})
 
     } else if (playerHand === 'paper' && computerHand === 'rock') {
-      setResults({winner: 'Player', msg: 'Paper beats Rock!'})
+      setResults({winner: 'Player wins!', msg: 'Paper beats Rock!'})
 
     } else if (playerHand === 'paper' && computerHand === 'scissors') {
-      setResults({winner: 'Computer', msg: 'Scissors beat Paper!'})
+      setResults({winner: 'Computer wins!', msg: 'Scissors beat Paper!'})
 
     } else if (playerHand === 'scissors' && computerHand === 'rock') {
-      setResults({winner: 'Computer', msg: 'Rock beats Scissors!'})
+      setResults({winner: 'Computer wins!', msg: 'Rock beats Scissors!'})
 
     } else if (playerHand === 'scissors' && computerHand === 'paper') {
-      setResults({winner: 'Player', msg: 'Scissors beat Paper!'})
+      setResults({winner: 'Player wins!', msg: 'Scissors beat Paper!'})
 
     } else {
-      setResults({winner: 'No one', msg: 'Draw!'})
+      setResults({winner: 'Draw!', msg: ''})
     }
   };
 
@@ -78,18 +86,14 @@ function App() {
       <div className='game-container'>
         
         <div className='computer-section'>
-          <ScoreDisplay type='computer' />
+          <ScoreDisplay type='computer' score={score.computer} />
           <HandDisplay type='computer' hand={computerHand} runTimer={runTimer} />
         </div>
 
-        <div className='results-section'>
-          {runTimer && <p className='timer'>{timer}</p>}
-          <p className='results-winner'> Rock wins!</p>
-          <p className='results-message'> Rock beats scissors!</p>
-        </div>
+        <Results timer={timer} runTimer={runTimer} results={results} />
 
         <div className='player-section'> 
-          <ScoreDisplay type='player' />
+          <ScoreDisplay type='player' score={score.player} />
           <HandDisplay type='player' hand={playerHand} runTimer={runTimer} />
         </div>
       
@@ -99,7 +103,14 @@ function App() {
 
         <div className='btns-options-container'>
           {options.map((option) => {
-            return (<BtnOption option={option.name} key={`btn-${option.name}`} setPlayerHand={setPlayerHand} playerHand={playerHand} />)
+            return (<BtnOption
+              option={option.name}
+              key={`btn-${option.name}`}
+              setPlayerHand={setPlayerHand}
+              playerHand={playerHand}
+              setComputerHand={setComputerHand}
+              setSelectedHand={setSelectedHand}
+              selectedHand={selectedHand}/>)
           })}
         </div>
 

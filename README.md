@@ -1,10 +1,3 @@
-### day1: 01/02/2024
-
-create-react-app
-github repo
-
-- react icons
-
 # Rock Paper Scissors in React
 
 ## Overview
@@ -56,9 +49,20 @@ https://rockpaperscissors.katieloesch.co.uk/
 
 - fonts:
 
-- icons: react icons
-  - https://react-icons.github.io/react-icons/
-  - https://www.npmjs.com/package/react-icons
+  - main: 'Handlee', designed by Joe Prince
+    - source: [Cufon Fonts](https://www.cufonfonts.com/):
+      - https://www.cufonfonts.com/font/handlee
+    - also available from [Google Fonts](https://fonts.google.com/):
+      - https://fonts.google.com/specimen/Handlee
+  - timer: 'Cute Font', designed by TypoDesign Lab. Inc
+    - source: [Google Fonts](https://fonts.google.com/)
+    - https://fonts.google.com/specimen/Cute+Font
+
+- icons:
+  - iconify
+    - https://icon-sets.iconify.design/
+  - fontawesome
+    - https://fontawesome.com/
 
 ### Additional tools used:
 
@@ -140,17 +144,23 @@ npx create-react-app .
 
 - I also created a wireframe on Excalidraw to get an idea of the basic layout of the website.
 
-<img src="./src/assets/images/wireframe.jpg" alt="wireframe" width="450">
+<img src="./src/assets/images/wireframe.jpg" alt="wireframe" width="600">
 
 ### Day 2 - 02/02/2024
 
 - start readme file
+- finish game logic
+- add score board
+- mirror icon images so they 'face each other'
 
 ## 7. <a name="challenges"></a> Challenges
+
+- mirror icon images so they 'face each other'
 
 ## 8. <a name="wins"></a> Wins
 
 - game logic
+- timeframe
 
 ## <a name="takeaways"></a> 9. Key Learnings & Takeaways
 

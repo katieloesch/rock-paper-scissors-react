@@ -88,28 +88,7 @@
      
     }
 
-    .results-section {
-    
-      color: white;
-      text-align: center;
-      padding: 10px;
 
-      .timer {
-        color: white;
-        font-size: 200px;
-
-      }
-
-      .results-winner {
-        font-size: 32px;
-        font-weight: bold;
-        margin-bottom: 50px;
-      }
-      .results-message {
-        font-size: 22px;
-      }
-
-    }
   }
 
 
@@ -150,4 +129,13 @@
   }
 
 
+}
+
+
+#rock-icon {
+  transform: rotate(90deg);
+}
+#rock-icon-mirror {
+
+  transform: scaleY(-1) rotate(-90deg);
 }

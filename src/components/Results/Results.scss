@@ -1,0 +1,24 @@
+.results-section {
+    
+    color: darkred;
+    text-align: center;
+    padding: 10px;
+    width: 200px;
+
+    .timer {
+      color: red;
+      font-size: 100px;
+      font-family: 'Cute Font', sans-serif;
+
+    }
+
+    .results-winner {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 50px;
+    }
+    .results-message {
+      font-size: 22px;
+    }
+
+  }

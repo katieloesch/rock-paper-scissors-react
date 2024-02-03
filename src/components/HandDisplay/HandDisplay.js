@@ -1,26 +1,38 @@
 import React from 'react'
-import { options } from '../../options'
+import { options, fist } from '../../options'
 
 import './../../App.scss'
 
 const HandDisplay = ({ hand, type, runTimer }) => {
     let display;
+    let icon;
+    let label;
 
     if (hand) {
-        display = options.find((e) => (e.name === hand))
+        display = options.find((e) => (e.name === hand));
+        icon = display.icon;
+        label = display.label
+
+        if (type === 'computer' && hand === 'scissors') {
+          icon = display.iconMirror
+        }
+        if (type === 'player' && hand === 'rock') {
+          icon = display.iconMirror
+        }
+
+       
     }
 
-    let mirror;
-    if (type === 'computer' && hand === 'scissors') {
-      mirror = 'mirror'
-    }
+    
+
 
 
   return (
-    <div className={`${type}-hand ${mirror}`}>
-        {runTimer && <div className={type==='computer' ? 'comp-shake' : 'player-shake'}>{options[0].icon}</div>}
-        {display && display.icon}
-        <p>{display && display.label}</p>
+    <div className={`${type}-hand`}>
+        {runTimer && <div className={type==='computer' ? 'comp-shake' : 'player-shake'}>{fist.icon}</div>}
+        <p>{runTimer && ' '}</p>
+        {!runTimer && display && icon}
+        <p>{!runTimer && display && label}</p>
     </div>
   )
 }

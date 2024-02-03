@@ -1,8 +1,18 @@
+@font-face { /* source: https://www.cufonfonts.com/font/handlee */
+  font-family: 'Handlee';
+  src: url('./assets/fonts/handlee-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&display=swap');
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Papyrus;
+  font-family: 'Handlee', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 body {
