@@ -1,0 +1,39 @@
+.hand-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+  background-color: var(--bisque);
+  width: 200px;
+  height: 200px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+  .player-shake {
+    animation: playerShake 0.8s ease-in-out infinite;
+  }
+
+  .comp-shake {
+    animation: compShake 0.8s ease-in-out infinite;
+  }
+
+  @keyframes compShake {
+    0%,
+    100% {
+      transform: rotate(100deg);
+    }
+    50% {
+      transform: rotate(80deg);
+    }
+  }
+  @keyframes playerShake {
+    0%,
+    100% {
+      transform: scaleY(-1) rotate(-80deg);
+    }
+    50% {
+      transform: scaleY(-1) rotate(-100deg);
+    }
+  }
+}

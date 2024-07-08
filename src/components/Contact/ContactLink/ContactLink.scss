@@ -1,0 +1,58 @@
+.contact-link {
+  border: 1px solid rgb(158, 139, 139);
+  background-color: rgb(158, 139, 139);
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  transition: 0.4s ease-in-out;
+  opacity: 0.65;
+
+  svg {
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    color: white;
+  }
+
+  &.code-link {
+    svg {
+      scale: 0.9;
+    }
+    padding-bottom: 0px;
+    padding-top: 6px;
+  }
+
+  &.portfolio-link {
+    svg {
+      scale: 1.4;
+    }
+    padding-bottom: 0px;
+  }
+
+  &.github-link {
+    padding-bottom: 0px;
+    padding-top: 6px;
+  }
+
+  &.mail-link {
+    padding-bottom: 0px;
+    svg {
+      scale: 1.4;
+    }
+  }
+
+  &.linkedin-link {
+    padding-bottom: 0px;
+    padding-top: 8px;
+    svg {
+      scale: 0.7;
+    }
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+}

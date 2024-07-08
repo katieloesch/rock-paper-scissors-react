@@ -1,20 +1,13 @@
-import React from 'react'
+import React from "react";
+import "./ScoreDisplay.scss";
 
-const ScoreDisplay = ({ type, score }) => {
-
-  let label;
-  if (type === 'computer') {
-      label = 'Computer'
-  } else {
-      label = 'Player'
-  }
-
+const ScoreDisplay = ({ type, score, label }) => {
   return (
-    <div className={`${type}-score`}>
-        <h3>{label}</h3>
-        <p>{score}</p>
-    </div> 
-  )
-}
+    <div className={`score-display ${type}-score`}>
+      <h3>{label}</h3>
+      <p>{score}</p>
+    </div>
+  );
+};
 
-export default ScoreDisplay
+export default ScoreDisplay;

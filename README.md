@@ -45,6 +45,11 @@ https://rockpaperscissors.katieloesch.co.uk/
     npx create-react-app .
     ```
 
+- dependencies
+  - node-sass
+    - https://www.npmjs.com/package/node-sass
+    - https://github.com/sass/node-sass
+
 ### UI
 
 - fonts:

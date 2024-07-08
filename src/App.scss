@@ -1,141 +1,130 @@
-.App {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  min-height: 100vh;
+// .App {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-around;
+//   align-items: center;
+//   width: 100%;
+//   min-height: 100vh;
 
-  .title-container {
+//   .title-container {
 
-    h1 {}
-  
-  }
+//     h1 {}
 
-  .game-container {
+//   }
 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 100px;
-    height: 200px;
+//   .game-container {
 
-    .player-section, .computer-section {
+//     display: flex;
+//     flex-direction: row;
+//     align-items: center;
+//     justify-content: space-between;
+//     margin-bottom: 100px;
+//     height: 200px;
 
-      .player-score, .computer-score {
-        width: 200px;
-        background-color: white;
-        margin-bottom: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+//     .player-section, .computer-section {
 
-        h3 {
-          padding: 20px 0;
-          background-color: rgb(254, 243, 119);
-          width: 100%;
-          text-align: center;
-        }
-      }
+//       .player-score, .computer-score {
+//         width: 200px;
+//         background-color: white;
+//         margin-bottom: 20px;
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         justify-content: center;
 
-      .player-hand, .computer-hand {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        flex-direction: column;
-        background-color: rgba(255, 255, 255, 0.8);
-        width: 200px;
-        height: 200px;
-        border-radius: 5px;
+//         h3 {
+//           padding: 20px 0;
+//           background-color: rgb(254, 243, 119);
+//           width: 100%;
+//           text-align: center;
+//         }
+//       }
 
-       
+//       .player-hand, .computer-hand {
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         gap: 10px;
+//         flex-direction: column;
+//         background-color: rgba(255, 255, 255, 0.8);
+//         width: 200px;
+//         height: 200px;
+//         border-radius: 5px;
 
-        .player-shake {
-          animation: playerShake 0.8s ease-in-out infinite;
-        }
+//         .player-shake {
+//           animation: playerShake 0.8s ease-in-out infinite;
+//         }
 
-        .comp-shake {
-          animation: compShake 0.8s ease-in-out infinite;
-        }
-        
-        @keyframes compShake {
-          0%,
-          100% {
-            transform: rotate(100deg);
-          }
-          50% {
-            transform: rotate(80deg);
-          }
-        }
-        @keyframes playerShake {
-          0%,
-          100% {
-            transform: scaleY(-1) rotate(-80deg);
-          }
-          50% {
-            transform: scaleY(-1) rotate(-100deg);
-          }
-        }
-        
+//         .comp-shake {
+//           animation: compShake 0.8s ease-in-out infinite;
+//         }
 
-        p {}
+//         @keyframes compShake {
+//           0%,
+//           100% {
+//             transform: rotate(100deg);
+//           }
+//           50% {
+//             transform: rotate(80deg);
+//           }
+//         }
+//         @keyframes playerShake {
+//           0%,
+//           100% {
+//             transform: scaleY(-1) rotate(-80deg);
+//           }
+//           50% {
+//             transform: scaleY(-1) rotate(-100deg);
+//           }
+//         }
 
-      }
-    
-     
-    }
+//         p {}
 
+//       }
 
-  }
+//     }
 
+//   }
 
-  .btns-container {
+//   .btns-container {
 
+//     .btns-options-container {
 
-    .btns-options-container {
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//       flex-direction: row;
+//       gap: 50px;
 
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: row;
-      gap: 50px;
-  
-    }
+//     }
 
-    .btns-play-container {
+//     .btns-play-container {
 
-      display: flex;
-      align-items: center;
-      justify-content: center;
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
 
-      #btn-play {
-        background-color: bisque;
-        padding: 10px 30px;
-        margin-top: 50px;
-        font-weight: bold;
-        transition: 0.2s ease-in-out;
+//       #btn-play {
+//         background-color: bisque;
+//         padding: 10px 30px;
+//         margin-top: 50px;
+//         font-weight: bold;
+//         transition: 0.2s ease-in-out;
 
-        &:hover {
+//         &:hover {
 
-          
+//       }
+//       }
+//     }
 
-      }
-      }
-    }
+//   }
 
-  }
+// }
 
+// #rock-icon {
+//   transform: rotate(90deg);
+// }
+// #rock-icon-mirror {
 
-}
-
-
-#rock-icon {
-  transform: rotate(90deg);
-}
-#rock-icon-mirror {
-
-  transform: scaleY(-1) rotate(-90deg);
-}
+//   transform: scaleY(-1) rotate(-90deg);
+// }
