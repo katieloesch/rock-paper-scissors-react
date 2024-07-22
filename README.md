@@ -158,6 +158,8 @@ npx create-react-app .
 - add score board
 - mirror icon images so they 'face each other'
 
+### Day 3
+
 ## 7. <a name="challenges"></a> Challenges
 
 - mirror icon images so they 'face each other'
