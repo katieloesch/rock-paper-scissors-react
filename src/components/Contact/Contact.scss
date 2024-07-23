@@ -1,9 +1,8 @@
 .contact {
   display: flex;
-  align-items: center;
   flex-direction: row;
-
-  padding: 5px;
+  align-items: center;
+  justify-content: space-around;
   transition: 0.4s ease-in-out;
   background-color: rgb(232, 129, 61);
 }

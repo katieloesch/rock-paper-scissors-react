@@ -31,11 +31,18 @@
       scale: 1.5;
     }
     padding-bottom: 0px;
+    svg {
+      scale: 1.5;
+    }
   }
 
   &.github-link {
     padding-bottom: 0px;
     padding-top: 6px;
+
+    svg {
+      scale: 0.92;
+    }
   }
 
   &.mail-link {

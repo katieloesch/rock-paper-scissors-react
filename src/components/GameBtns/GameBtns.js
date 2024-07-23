@@ -30,12 +30,12 @@ const GameBtns = ({
       </div>
 
       <div className="btns-play-container">
-        <button
+        <div
           className={`btn-play ${selectedHand ? "active" : "disabled"}`}
           onClick={start}
         >
-          Play
-        </button>
+          <span>Play</span>
+        </div>
       </div>
     </div>
   );
