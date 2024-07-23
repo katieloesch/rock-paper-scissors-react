@@ -12,7 +12,7 @@ const GameBtns = ({
   start,
 }) => {
   return (
-    <React.Fragment>
+    <div>
       <div className="btns-options-container">
         {options.map((option) => {
           return (
@@ -37,7 +37,7 @@ const GameBtns = ({
           Play
         </button>
       </div>
-    </React.Fragment>
+    </div>
   );
 };
 

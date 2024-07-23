@@ -34,7 +34,7 @@ const Contact = ({ code }) => {
   ];
 
   return (
-    <div className="contact-links">
+    <div className="contact">
       {links.map((link) => (
         <ContactLink
           name={link.name}

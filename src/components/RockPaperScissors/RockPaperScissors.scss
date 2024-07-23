@@ -1,18 +1,29 @@
 .rock-paper-scissors {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
-  width: 100%;
-  min-height: 100vh;
+  justify-content: space-around;
+  flex-grow: 1;
+
+  .title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: var(--primary-rps);
+    }
+  }
 
   .game-container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 100px;
-    height: 200px;
+    height: 350px;
+    gap: 25px;
 
     section {
       border: 1px solid var(--primary-rps);

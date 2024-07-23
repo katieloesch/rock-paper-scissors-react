@@ -1,9 +1,10 @@
-import "./App.scss";
+import React from "react";
+
 import { RockPaperScissors, Contact } from "./components";
 
 function App() {
   return (
-    <div className="App">
+    <div className="rps-app">
       <RockPaperScissors />
       <Contact code="https://github.com/katieloesch/rock-paper-scissors-react" />
     </div>

@@ -1,6 +1,7 @@
 .contact-link {
-  border: 1px solid rgb(158, 139, 139);
-  background-color: rgb(158, 139, 139);
+  // border: 1px solid rgb(158, 139, 139);
+  // background-color: rgb(158, 139, 139);
+
   border-radius: 50%;
   width: 35px;
   height: 35px;
@@ -27,7 +28,7 @@
 
   &.portfolio-link {
     svg {
-      scale: 1.4;
+      scale: 1.5;
     }
     padding-bottom: 0px;
   }
@@ -40,7 +41,7 @@
   &.mail-link {
     padding-bottom: 0px;
     svg {
-      scale: 1.4;
+      scale: 1.5;
     }
   }
 
