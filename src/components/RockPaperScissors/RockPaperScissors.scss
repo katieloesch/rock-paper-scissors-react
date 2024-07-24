@@ -44,6 +44,30 @@
       height: 300px;
     }
   }
+  @media screen and (max-width: 450px) {
+    .title-container {
+      h1 {
+        font-size: 2.2rem;
+      }
+    }
+  }
+  @media screen and (max-width: 360px) {
+    .title-container {
+      h1 {
+        font-size: 2rem;
+        padding-bottom: 0;
+      }
+    }
+
+    .game-container {
+      height: 270px;
+    }
+  }
+  @media screen and (max-width: 280px) {
+    .game-container {
+      height: 200px;
+    }
+  }
 }
 
 #rock-icon {

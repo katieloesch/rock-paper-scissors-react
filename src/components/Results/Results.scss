@@ -62,4 +62,14 @@
       margin-bottom: 25px;
     }
   }
+  @media screen and (max-width: 720px) {
+    .timer {
+      font-size: 85px;
+    }
+  }
+  @media screen and (max-width: 280px) {
+    .results-message {
+      margin-bottom: 5px;
+    }
+  }
 }
