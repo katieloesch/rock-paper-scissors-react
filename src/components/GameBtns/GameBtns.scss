@@ -34,7 +34,7 @@
 
     span {
       font-weight: bold;
-      font-size: 1.3rem;
+      font-size: 1.4rem;
     }
 
     &:hover {
@@ -52,13 +52,11 @@
     span {
       color: var(--primary-rps);
     }
+  }
 
-    // &:hover {
-    //   background-position: 0 0;
-    //   border: 2px solid var(--primary-rps);
-    //   span {
-    //     color: var(--primary-rps);
-    //   }
-    // }
+  @media screen and (max-width: 720px) {
+    .btn-play {
+      margin-bottom: 50px;
+    }
   }
 }

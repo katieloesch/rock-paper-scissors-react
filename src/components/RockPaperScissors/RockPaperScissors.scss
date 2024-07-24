@@ -12,7 +12,7 @@
 
     h1 {
       text-align: center;
-      font-size: 2.5rem;
+      font-size: 2.75rem;
       color: var(--primary-rps);
     }
   }
@@ -31,7 +31,18 @@
     }
   }
 
-  .btns-container {
+  @media screen and (max-width: 720px) {
+    justify-content: flex-start;
+    .title-container {
+      h1 {
+        padding-top: 30px;
+        padding-bottom: 10px;
+      }
+    }
+
+    .game-container {
+      height: 300px;
+    }
   }
 }
 

@@ -1,37 +1,53 @@
 @font-face {
-  /* source: https://www.cufonfonts.com/font/handlee */
-  font-family: "Handlee";
-  src: url("./assets/fonts/handlee-regular.woff") format("woff");
+  /* source: CufonFonts -> https://www.cufonfonts.com/font/handlee */
+  font-family: 'Handlee';
+  src: url('./assets/fonts/handlee-regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Cute+Font&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&display=swap');
+/* source: GoogleFonts: https://fonts.google.com/specimen/Cute+Font */
 
 :root {
   /* colours */
-  --yellow-light: rgb(255, 245, 134);
-  --bisque: bisque;
-  --bg-rps: rgb(245, 184, 130);
-  --primary-rps: rgb(184, 55, 0);
-  --primary-accent-rps: rgb(115, 39, 39);
+  --yellow-light: #fff586;
+  --bisque: #ffe4c4;
+  --bg-rps: #f5b882;
+  --bg-rps3: #f6b378;
+  --bg-rps2: #f7caa2;
+  --primary-rps: #b83700;
+  --primary-accent-rps: #732727;
 
   /* fonts */
+  --font-main-rps: 'Handlee', 'Trebuchet MS', 'Lucida Sans Unicode',
+    'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  --font-num-rps: 'Cute Font', sans-serif;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Handlee", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: var(--font-main-rps);
 }
 
 body {
   min-height: 100vh;
   min-width: 100vw;
-  background-color: sandybrown;
-  overflow-y: hidden; /* Prevent horizontal scrolling */
+  background: rgb(245, 190, 130);
+  background: radial-gradient(
+    circle,
+    rgba(245, 184, 130, 1) 100%,
+    rgba(247, 202, 162, 1) 100%,
+    rgba(245, 184, 130, 1) 100%
+  );
+
+  overflow-y: hidden;
+
+  @media screen and (max-width: 720px) {
+    overflow-y: auto;
+  }
 }
 
 .rps-app {
@@ -39,6 +55,10 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @media screen and (max-width: 720px) {
+    justify-content: flex-start;
+  }
 }
 
 button:hover {

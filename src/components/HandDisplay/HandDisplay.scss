@@ -10,6 +10,10 @@
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 
+  p {
+    font-size: 1.1rem;
+  }
+
   .player-shake {
     animation: playerShake 0.8s ease-in-out infinite;
   }
@@ -35,5 +39,11 @@
     50% {
       transform: scaleY(-1) rotate(-100deg);
     }
+  }
+
+  @media screen and (max-width: 720px) {
+    width: 150px;
+    height: 150px;
+    padding: 20px;
   }
 }

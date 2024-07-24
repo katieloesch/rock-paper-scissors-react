@@ -45,6 +45,8 @@ https://rockpaperscissors.katieloesch.co.uk/
     npx create-react-app .
     ```
 
+- package manager: npm (v 10.8.1)
+  - https://www.npmjs.com/
 - dependencies
   - node-sass
     - https://www.npmjs.com/package/node-sass
@@ -158,7 +160,9 @@ npx create-react-app .
 - add score board
 - mirror icon images so they 'face each other'
 
-### Day 3
+### Day 24/07/2024
+
+- media queries
 
 ## 7. <a name="challenges"></a> Challenges
 
