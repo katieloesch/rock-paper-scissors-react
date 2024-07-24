@@ -17,6 +17,10 @@
 
 ## <a name="description"></a> 1. Description
 
+<img src="./src/assets/images/rock_paper_scissors_rules.png" alt="game rules" width="400">
+
+image source: https://en.wikipedia.org/wiki/Rock_paper_scissors#/media/File:Rock-paper-scissors.svg
+
 ## <a name="deployment-link"></a> 2. Deployment link
 
 https://rockpaperscissors.katieloesch.co.uk/
@@ -91,7 +95,8 @@ https://rockpaperscissors.katieloesch.co.uk/
 
 ### Resources and tutorials:
 
-- youtube: [Build React Rock Paper Scissors with React](https://www.youtube.com/watch?v=llrk6Jcq4m4) by [Telmo Sampaio](https://www.youtube.com/@Telmosampaio)
+- Blog: [Approaches to Media Queries in Sass](https://css-tricks.com/approaches-media-queries-sass/) by [Eduardo Bouças ](https://css-tricks.com/author/eduardoboucas/)
+- YouTube: [Build React Rock Paper Scissors with React](https://www.youtube.com/watch?v=llrk6Jcq4m4) by [Telmo Sampaio](https://www.youtube.com/@Telmosampaio)
 
 ## <a name="deliverables"></a> 5. Deliverables
 
