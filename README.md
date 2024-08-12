@@ -17,86 +17,202 @@
 
 ## <a name="description"></a> 1. Description
 
-<img src="./src/assets/images/rock_paper_scissors_rules.png" alt="game rules" width="400">
+<img src="./src/assets/images/screenshots/computer_wins_2.png" alt="game rules" width="300">
+<img src="./src/assets/images/screenshots/player_wins_2.png" alt="game rules" width="300">
+<img src="./src/assets/images/screenshots/draw_1.png" alt="game rules" width="300">
 
-image source: https://en.wikipedia.org/wiki/Rock_paper_scissors#/media/File:Rock-paper-scissors.svg
+A one-player version of the classic hand game Rock-Paper-Scissors. The Vanilla JavaScript version of Rock-Paper-Scissors was one of the first programs I wrote when I learned how to code. In order to familiarize myself with JavaScript frameworks and libraries I thought it would be a fun idea to add a graphical user interface to the Vanilla JavaScript version.
+
+The game is traditionally played between two players. The goal is to select a gesture that defeats the opponent's gesture according to the game rules. Each player simultaneously forms one of three shapes with an outstretched hand. The possible shapes are:
+
+1. **Rock** &nbsp; :fist: -> a fist
+2. **Paper** &nbsp; :hand: -> open hand
+3. **Scissors** &nbsp; :v: -> a fist with the index and middle fingers extended, forming a V-shape
+
+The winner is determined by the following rules:
+
+- **Rock crushes Scissors** i.e. Rock beats Scissors
+- **Scissors cuts Paper** i.e. Scissors beat Paper
+- **Paper covers Rock** i.e. Paper beats Rock
+- If both players choose the same shape, it's a tie and the game is usually repeated.
+
+<br>
+
+<img src="./src/assets/images/rock_paper_scissors_rules.png" alt="game rules" width="375">
+
+<sub>image source: [Wikipedia](https://en.wikipedia.org/wiki/Rock_paper_scissors#/media/File:Rock-paper-scissors.svg)</sub>
+
+<!-- <img src="./src/assets/images/rock_paper_scissors_literal.png" alt="literal rock, paper and scissors" width="300">
+
+<sub>image source: [RemptonGames](https://remptongames.com/2018/02/17/cut-crush-and-cover-the-strategies-of-rock-paper-scissors/)</sub>
+
+<img src="./src/assets/images/the_rock_vs_paper.jpg" alt="Dwayne 'the Rock' Johnson vs scissors vs paper meme" width="250">
+
+<sub>image source: [Know Your Meme](https://knowyourmeme.com/photos/1363025-dwayne-the-rock-johnson)</sub> -->
+
+The game is quick and straightforward, making it popular for settling small disputes or as a decision-making tool where an impartial result is needed. <br> This version of the game is played between a human player and a \'computer\' that randomly picks one of the three possible hands. The objective and rules are essentially the same as playing against another human. The player aims to select a gesture that defeats the computer's gesture according to the game rules.
+
+There is however one aspect that is different when playing against a computer: in this case, the computer's choice is completely random, meaning it has no memory of previous games or patterns. This means that each of the three choices (Rock, Paper or Scissors) has an equal probability (1/3) of being selected.
+
+### How to Play
+
+- The human player selects of of the 3 buttons representing the 3 available hands (Rock, Paper, or Scissors).
+- After making their choice they can hit the play button and a countdown will start.
+- At the end of the countdown, the computer's randomly selected hand is revealed and the winner is determined according to the rules above unless there's a tie.
+
+<img src="./src/assets/images/screenshots/sequence/sequence_0.png" alt="" width="250">
+<img src="./src/assets/images/screenshots/sequence/sequence_1.png" alt="" width="250">
+<br>
+<img src="./src/assets/images/screenshots/sequence/sequence_2.png" alt="" width="250">
+<img src="./src/assets/images/screenshots/sequence/sequence_3.png" alt="" width="250">
+<br>
+<img src="./src/assets/images/screenshots/sequence/sequence_5.png" alt="" width="250">
+<img src="./src/assets/images/screenshots/sequence/sequence_6.png" alt="" width="250">
 
 ## <a name="deployment-link"></a> 2. Deployment link
 
-https://rockpaperscissors.katieloesch.co.uk/
-
 ## <a name="installation"></a> 3. Installation
 
-- package manager used: npm - v9.5.0
-  - https://www.npmjs.com/package/npm
-- to install dependencies, run:
-  ```zsh
-   npm install
-  ```
-- to start application, run:
-  ```zsh
-   npm start
-  ```
+#### Package Manager: npm
+
+- version: 9.5.0
+- homepage: https://www.npmjs.com/
+- repo: https://github.com/npm
+
+#### Getting Started
+
+- In order to clone the repository, you need to have [Git](https://git-scm.com/) installed on your local machine.
+- To clone the repository to your local machine, run the following command in your terminal:
+
+```zsh
+git clone https://github.com/username/repository-name.git
+```
+
+- you'll be ready to install the dependencies once you navigate into the project directory:
+
+```zsh
+cd app-name
+```
+
+#### Running the Application Locally in a local development environment:
+
+**1. Install Dependencies**
+
+Before running the application, ensure that all necessary dependencies are installed by executing the following terminal command in the root of the project directory:
+
+```zsh
+npm install
+```
+
+**2. Start the Development Server**
+
+Once the dependencies are installed, start the development server with the following command:
+
+```zsh
+npm start
+```
+
+**3. Access the Application**:
+
+- The development server will start on `http://localhost:3000`.
+- By default, your default web browser should automatically open and navigate to this address.
+- If the browser window does not open automatically, you can manually access the application by navigating to `http://localhost:3000` in any web browser.
 
 ## <a name="technologies"></a> 4. Technologies Used
 
-- This application is based in ReactJS (v18.2.0), JavaScript, JSX and SCSS.
+### Core Technologies
 
-  - it was created using the 'create-react-app' command
-  - https://create-react-app.dev/
+- **ReactJS** (v18.2.0):
 
-    ```zsh
-    npx create-react-app .
-    ```
+  - primary framework used to build the application
 
-- package manager: npm (v 10.8.1)
-  - https://www.npmjs.com/
-- dependencies
-  - node-sass
-    - https://www.npmjs.com/package/node-sass
-    - https://github.com/sass/node-sass
+  - created using the `create-react-app` tool
+  - React docs: https://reactjs.org/
+  - Create React App docs: https://create-react-app.dev/
 
-### UI
+  ```zsh
+  npx create-react-app .
+  ```
 
-- fonts:
+- **SCSS**:
+  - CSS preprocessor used for styling the application
+  - docs: https://sass-lang.com/guide
 
-  - main: 'Handlee', designed by Joe Prince
-    - source: [Cufon Fonts](https://www.cufonfonts.com/):
-      - https://www.cufonfonts.com/font/handlee
-    - also available from [Google Fonts](https://fonts.google.com/):
-      - https://fonts.google.com/specimen/Handlee
-  - timer: 'Cute Font', designed by TypoDesign Lab. Inc
-    - source: [Google Fonts](https://fonts.google.com/)
-    - https://fonts.google.com/specimen/Cute+Font
+### Key Dependencies
 
-- icons:
-  - iconify
-    - https://icon-sets.iconify.design/
-  - fontawesome
-    - https://fontawesome.com/
+- **Sass** (v1.77.8):
 
-### Additional tools used:
+  - CSS preprocessor used for styling the application
+  - used for styling the application
+  - npm: https://www.npmjs.com/package/sass
+  - GitHub repo: https://github.com/sass/dart-sass
 
-- Git / GitHub
-  - used for version control
-  - https://git-scm.com/
-  - https://github.com/
-- Visual Studio Code (VSCode)
-  - code editor used for writing CSS, JSX and JavaScript
-- Google Chrome browser
-  - used for launching the website and displaying the application Google Chrome
-- Google Chrome Developer Tools: For troubleshooting and debugging
-  - https://www.google.com/intl/en_uk/chrome/
-- Hostinger: provider used to host the game online
-  - https://www.hostinger.co.uk
-- Excalidraw
-  - used for building the wireframe
-  - https://excalidraw.com/
+- **React Icons** (v5.2.1):
+  - free and open-source project providing icons for use in React projects
+  - npm: https://www.npmjs.com/package/react-icons
+  - GitHub repo: https://github.com/react-icons/react-icons
+  - homepage: https://react-icons.github.io/react-icons/
 
-### Resources and tutorials:
+### UI and Design
 
-- Blog: [Approaches to Media Queries in Sass](https://css-tricks.com/approaches-media-queries-sass/) by [Eduardo Bouças ](https://css-tricks.com/author/eduardoboucas/)
-- YouTube: [Build React Rock Paper Scissors with React](https://www.youtube.com/watch?v=llrk6Jcq4m4) by [Telmo Sampaio](https://www.youtube.com/@Telmosampaio)
+- **Fonts**:
+
+  - main font: \'Handlee\', designed by Joe Prince.
+    - Cufon Fonts: https://www.cufonfonts.com/font/handlee
+    - Google Fonts: https://fonts.google.com/specimen/Handlee
+  - timer font: \'Cute Font\', designed by TypoDesign Lab. Inc.
+    - Google Fonts: https://fonts.google.com/specimen/Cute+Font
+
+- **Icons**:
+  - Iconify: free and open-source framework providing access to a vast number of icons designed to be used across different platforms and environments, including React
+    - homepage: https://icon-sets.iconify.design/
+    - GitHub Repo: https://github.com/iconify/iconify/tree/main
+    - license: https://github.com/iconify/iconify/blob/main/license.txt
+  - Font Awesome: icon library providing a large set of icons that are easy to use, scalable and customizable, including a free version that is open source
+    - homepage: https://fontawesome.com/
+    - GitHub repo: https://github.com/FortAwesome/Font-Awesome
+    - license: https://fontawesome.com/license/free
+
+### Development Tools
+
+- **Git / GitHub**: used for version control and collaboration
+
+  - <small>Git: https://git-scm.com/</small>
+  - <small>GitHub: https://github.com/</small>
+
+- **Visual Studio Code (VSCode)**: code editor used for development
+
+  - <small>homepage: https://code.visualstudio.com/</small>
+  - <small>GitHub repo: https://github.com/microsoft/vscode</small>
+
+- **Google Chrome & Chrome DevTools**: used for testing, debugging, and developing in the browser.
+
+  - Google Chrome: https://www.google.com/chrome/
+  - Chrome DevTools: https://developer.chrome.com/docs/devtools
+
+- **Excalidraw**: tool used to create wireframes for the application
+
+  - homepage: https://excalidraw.com/
+  - GitHub repo: https://github.com/excalidraw/excalidraw
+
+- **ChatGPT4o**: generative AI tool used for debugging and development support
+
+  - homepage: https://chat.openai.com/
+  - GitHub repo: https://github.com/openai
+
+- **Hostinger**: web hosting provider used to deploy the application
+  - UK homepage: https://www.hostinger.co.uk
+
+### Resources & Tutorials
+
+- **Blogs**:
+  - [Approaches to Media Queries in Sass](https://css-tricks.com/approaches-media-queries-sass/) by [Eduardo Bouças](https://css-tricks.com/author/eduardoboucas/)
+- **YouTube**:
+  - [Build React Rock Paper Scissors with React](https://www.youtube.com/watch?v=llrk6Jcq4m4) by [Telmo Sampaio](https://www.youtube.com/@Telmosampaio)
+
+---
+
+<!--
 
 ## <a name="deliverables"></a> 5. Deliverables
 
@@ -185,4 +301,4 @@ npx create-react-app .
 ## <a name="future-improvements"></a> 10. Future Improvements
 
 - option for multiple players
-- sound effects + animations
+- sound effects + animations -->
