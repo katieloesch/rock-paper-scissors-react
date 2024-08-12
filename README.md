@@ -17,17 +17,15 @@
 
 ## <a name="description"></a> 1. Description
 
-<img src="./src/assets/images/screenshots/computer_wins_2.png" alt="game rules" width="300">
-<img src="./src/assets/images/screenshots/player_wins_2.png" alt="game rules" width="300">
-<img src="./src/assets/images/screenshots/draw_1.png" alt="game rules" width="300">
+<img src="./src/assets/images/screenshots/computer_wins_2.png" alt="project screenshot" width="300"><img src="./src/assets/images/screenshots/player_wins_2.png" alt="project screenshot" width="300"><img src="./src/assets/images/screenshots/draw_1.png" alt="project screenshot" width="300">
 
-A one-player version of the classic hand game Rock-Paper-Scissors. The Vanilla JavaScript version of Rock-Paper-Scissors was one of the first programs I wrote when I learned how to code. In order to familiarize myself with JavaScript frameworks and libraries I thought it would be a fun idea to add a graphical user interface to the Vanilla JavaScript version.
+A one-player version of the classic hand game Rock-Paper-Scissors. The Vanilla JavaScript version of this game was one of the first programs I wrote when I learned how to code. In order to familiarize myself with JavaScript frameworks and libraries I thought it would be a fun idea to add a graphical user interface to the Vanilla JavaScript version.
 
 The game is traditionally played between two players. The goal is to select a gesture that defeats the opponent's gesture according to the game rules. Each player simultaneously forms one of three shapes with an outstretched hand. The possible shapes are:
 
-1. **Rock** &nbsp; :fist: -> a fist
-2. **Paper** &nbsp; :hand: -> open hand
-3. **Scissors** &nbsp; :v: -> a fist with the index and middle fingers extended, forming a V-shape
+1. **Rock** &nbsp; :fist: &nbsp;&#8594; a fist
+2. **Paper** &nbsp; :hand: &nbsp;&#8594; open hand
+3. **Scissors** &nbsp; :v: &nbsp;&#8594; a fist with the index and middle fingers extended, forming a V-shape
 
 The winner is determined by the following rules:
 
@@ -60,24 +58,20 @@ There is however one aspect that is different when playing against a computer: i
 - After making their choice they can hit the play button and a countdown will start.
 - At the end of the countdown, the computer's randomly selected hand is revealed and the winner is determined according to the rules above unless there's a tie.
 
-<img src="./src/assets/images/screenshots/sequence/sequence_0.png" alt="" width="250">
-<img src="./src/assets/images/screenshots/sequence/sequence_1.png" alt="" width="250">
-<br>
-<img src="./src/assets/images/screenshots/sequence/sequence_2.png" alt="" width="250">
-<img src="./src/assets/images/screenshots/sequence/sequence_3.png" alt="" width="250">
-<br>
-<img src="./src/assets/images/screenshots/sequence/sequence_5.png" alt="" width="250">
-<img src="./src/assets/images/screenshots/sequence/sequence_6.png" alt="" width="250">
+<img src="./src/assets/images/screenshots/sequence/sequence_0.png" alt="" width="400"><img src="./src/assets/images/screenshots/sequence/sequence_1.png" alt="" width="400">
 
-## <a name="deployment-link"></a> 2. Deployment link
+<img src="./src/assets/images/screenshots/sequence/sequence_2.png" alt="" width="400"><img src="./src/assets/images/screenshots/sequence/sequence_3.png" alt="" width="400">
+
+<img src="./src/assets/images/screenshots/sequence/sequence_5.png" alt="" width="400"><img src="./src/assets/images/screenshots/sequence/sequence_6.png" alt="" width="400">
+
+## <a name="deployment-link"></a> 2. Deployment Link
 
 ## <a name="installation"></a> 3. Installation
 
-#### Package Manager: npm
+#### Package Manager: npm (v9.5.0)
 
-- version: 9.5.0
-- homepage: https://www.npmjs.com/
-- repo: https://github.com/npm
+- <sub>homepage: https://www.npmjs.com/</sub>
+- <sub>GitHub repo: https://github.com/npm</sub>
 
 #### Getting Started
 
@@ -91,7 +85,7 @@ git clone https://github.com/username/repository-name.git
 - you'll be ready to install the dependencies once you navigate into the project directory:
 
 ```zsh
-cd app-name
+cd rock-paper-scissors-react
 ```
 
 #### Running the Application Locally in a local development environment:
@@ -124,84 +118,83 @@ npm start
 
 - **ReactJS** (v18.2.0):
 
-  - primary framework used to build the application
-
-  - created using the `create-react-app` tool
-  - React docs: https://reactjs.org/
-  - Create React App docs: https://create-react-app.dev/
+  - <sub>primary framework used to build the application</sub>
+  - <sub>created using the create-react-app tool</sub>
+  - <sub>React docs: https://reactjs.org/</sub>
+  - <sub>Create React App docs: https://create-react-app.dev/</sub>
 
   ```zsh
   npx create-react-app .
   ```
 
 - **SCSS**:
-  - CSS preprocessor used for styling the application
-  - docs: https://sass-lang.com/guide
+  - <sub>CSS preprocessor used for styling the application</sub>
+  - <sub>docs: https://sass-lang.com/guide</sub>
 
 ### Key Dependencies
 
 - **Sass** (v1.77.8):
 
-  - CSS preprocessor used for styling the application
-  - used for styling the application
-  - npm: https://www.npmjs.com/package/sass
-  - GitHub repo: https://github.com/sass/dart-sass
+  - <sub>CSS preprocessor used for styling the application</sub>
+  - <sub>used for styling the application</sub>
+  - <sub>npm: https://www.npmjs.com/package/sass</sub>
+  - <sub>GitHub repo: https://github.com/sass/dart-sass</sub>
 
 - **React Icons** (v5.2.1):
-  - free and open-source project providing icons for use in React projects
-  - npm: https://www.npmjs.com/package/react-icons
-  - GitHub repo: https://github.com/react-icons/react-icons
-  - homepage: https://react-icons.github.io/react-icons/
+  - <sub>free and open-source project providing icons for use in React projects</sub>
+  - <sub>npm: https://www.npmjs.com/package/react-icons</sub>
+  - <sub>GitHub repo: https://github.com/react-icons/react-icons</sub>
+  - <sub>homepage: https://react-icons.github.io/react-icons/</sub>
 
 ### UI and Design
 
 - **Fonts**:
 
   - main font: \'Handlee\', designed by Joe Prince.
-    - Cufon Fonts: https://www.cufonfonts.com/font/handlee
-    - Google Fonts: https://fonts.google.com/specimen/Handlee
+    - <sub>Cufon Fonts: https://www.cufonfonts.com/font/handlee</sub>
+    - <sub>Google Fonts: https://fonts.google.com/specimen/Handlee</sub>
   - timer font: \'Cute Font\', designed by TypoDesign Lab. Inc.
-    - Google Fonts: https://fonts.google.com/specimen/Cute+Font
+    - <sub>Google Fonts: https://fonts.google.com/specimen/Cute+Font</sub>
 
 - **Icons**:
   - Iconify: free and open-source framework providing access to a vast number of icons designed to be used across different platforms and environments, including React
-    - homepage: https://icon-sets.iconify.design/
-    - GitHub Repo: https://github.com/iconify/iconify/tree/main
-    - license: https://github.com/iconify/iconify/blob/main/license.txt
+    - <sub>homepage: https://icon-sets.iconify.design/</sub>
+    - <sub>GitHub Repo: https://github.com/iconify/iconify/tree/main</sub>
+    - <sub>license: https://github.com/iconify/iconify/blob/main/license.txt</sub>
   - Font Awesome: icon library providing a large set of icons that are easy to use, scalable and customizable, including a free version that is open source
-    - homepage: https://fontawesome.com/
-    - GitHub repo: https://github.com/FortAwesome/Font-Awesome
-    - license: https://fontawesome.com/license/free
+    - <sub>homepage: https://fontawesome.com/</sub>
+    - <sub>GitHub repo: https://github.com/FortAwesome/Font-Awesome</sub>
+    - <sub>license: https://fontawesome.com/license/free</sub>
 
 ### Development Tools
 
 - **Git / GitHub**: used for version control and collaboration
 
-  - <small>Git: https://git-scm.com/</small>
-  - <small>GitHub: https://github.com/</small>
+  - <sub>Git: https://git-scm.com/</sub>
+  - <sub>GitHub: https://github.com/</sub>
 
 - **Visual Studio Code (VSCode)**: code editor used for development
 
-  - <small>homepage: https://code.visualstudio.com/</small>
-  - <small>GitHub repo: https://github.com/microsoft/vscode</small>
+  - <sub>homepage: https://code.visualstudio.com/</sub>
+  - <sub>GitHub repo: https://github.com/microsoft/vscode</sub>
 
 - **Google Chrome & Chrome DevTools**: used for testing, debugging, and developing in the browser.
 
-  - Google Chrome: https://www.google.com/chrome/
-  - Chrome DevTools: https://developer.chrome.com/docs/devtools
+  - <sub>Google Chrome: https://www.google.com/chrome/</sub>
+  - <sub>Chrome DevTools: https://developer.chrome.com/docs/devtools</sub>
 
 - **Excalidraw**: tool used to create wireframes for the application
 
-  - homepage: https://excalidraw.com/
-  - GitHub repo: https://github.com/excalidraw/excalidraw
+  - <sub>homepage: https://excalidraw.com/</sub>
+  - <sub>GitHub repo: https://github.com/excalidraw/excalidraw</sub>
 
 - **ChatGPT4o**: generative AI tool used for debugging and development support
 
-  - homepage: https://chat.openai.com/
-  - GitHub repo: https://github.com/openai
+  - <sub>homepage: https://chat.openai.com/</sub>
+  - <sub>GitHub repo: https://github.com/openai</sub>
 
 - **Hostinger**: web hosting provider used to deploy the application
-  - UK homepage: https://www.hostinger.co.uk
+  - <sub>UK homepage: https://www.hostinger.co.uk</sub>
 
 ### Resources & Tutorials
 
