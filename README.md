@@ -1,4 +1,8 @@
-# Rock Paper Scissors in React
+# Rock, Paper, Scissors in React
+
+ <img src="./src/assets/images/rock_paper_scissors_literal.png" alt="literal rock, paper and scissors" width="300">
+ 
+ <sub>image source: [RemptonGames](https://remptongames.com/2018/02/17/cut-crush-and-cover-the-strategies-of-rock-paper-scissors/)</sub>
 
 ## Overview
 
@@ -36,17 +40,13 @@ The outcome is determined by these simple rules:
 
 <br>
 
-<img src="./src/assets/images/rock_paper_scissors_rules.png" alt="game rules" width="375">
+<img src="./src/assets/images/rock_paper_scissors_rules.png" alt="game rules" width="350">
 
 <sub>image source: [Wikipedia](https://en.wikipedia.org/wiki/Rock_paper_scissors#/media/File:Rock-paper-scissors.svg)</sub>
 
-<!-- <img src="./src/assets/images/rock_paper_scissors_literal.png" alt="literal rock, paper and scissors" width="300">
+<img src="./src/assets/images/the_rock_vs_paper.jpg" alt="Dwayne 'the Rock' Johnson vs scissors vs paper meme" width="240">
 
-<sub>image source: [RemptonGames](https://remptongames.com/2018/02/17/cut-crush-and-cover-the-strategies-of-rock-paper-scissors/)</sub>
-
-<img src="./src/assets/images/the_rock_vs_paper.jpg" alt="Dwayne 'the Rock' Johnson vs scissors vs paper meme" width="250">
-
-<sub>image source: [Know Your Meme](https://knowyourmeme.com/photos/1363025-dwayne-the-rock-johnson)</sub> -->
+<sub>image source: [Know Your Meme](https://knowyourmeme.com/photos/1363025-dwayne-the-rock-johnson)</sub>
 
 The game is quick and straightforward, making it popular for resolving minor disputes or as a tool for impartial decision-making.
 
@@ -273,6 +273,8 @@ npx create-react-app .
 ```
 
 Next, I created a repository on GitHub and linked it to the local project. I focused on developing the core game logic and created a wireframe to visualize the basic layout of the website. Additionally, I built the first few JSX components and applied some basic styling.
+
+<br>
 
 <img src="./src/assets/images/wireframe.jpg" alt="wireframe" width="600">
 
