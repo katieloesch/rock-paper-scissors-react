@@ -19,20 +19,20 @@
 
 <img src="./src/assets/images/screenshots/rps_1.png" alt="project screenshot" width="350">&nbsp;<img src="./src/assets/images/screenshots/player_wins_2.png" alt="project screenshot" width="350">&nbsp;<img src="./src/assets/images/screenshots/draw_1.png" alt="project screenshot" width="350">&nbsp;<img src="./src/assets/images/screenshots/computer_wins_2.png" alt="project screenshot" width="350">
 
-A one-player version of the classic hand game Rock-Paper-Scissors. The Vanilla JavaScript version of this game was one of the first programs I wrote when I learned how to code. In order to familiarize myself with JavaScript frameworks and libraries I thought it would be a fun idea to add a graphical user interface to the Vanilla JavaScript version.
+This is a single-player adaptation of the classic hand game Rock-Paper-Scissors. The original version of this game was one of the first programs I developed when I began learning to code using Vanilla JavaScript. To deepen my understanding of JavaScript frameworks and libraries, I decided to enhance the original by incorporating a graphical user interface.
 
-The game is traditionally played between two players. The goal is to select a gesture that defeats the opponent's gesture according to the game rules. Each player simultaneously forms one of three shapes with an outstretched hand. The possible shapes are:
+Rock-Paper-Scissors is traditionally a two-player game. The objective is to select a gesture that outperforms your opponent's gesture according to the game's rules. Each player simultaneously chooses one of three hand shapes:
 
-1. **Rock** &nbsp; :fist: &nbsp;&#8594;&nbsp; a fist
-2. **Paper** &nbsp; :hand: &nbsp;&#8594;&nbsp; open hand
-3. **Scissors** &nbsp; :v: &nbsp;&#8594;&nbsp; a fist with the index and middle fingers extended, forming a V-shape
+1. **Rock** &nbsp; :fist: &nbsp;&#8594;&nbsp; a clenched fist
+2. **Paper** &nbsp; :hand: &nbsp;&#8594;&nbsp; an open hand
+3. **Scissors** &nbsp; :v: &nbsp;&#8594;&nbsp; a V-shape formed by extending the index and middle fingers
 
-The winner is determined by the following rules:
+The outcome is determined by these simple rules:
 
 - **Rock crushes Scissors** i.e. Rock beats Scissors
 - **Scissors cuts Paper** i.e. Scissors beat Paper
 - **Paper covers Rock** i.e. Paper beats Rock
-- If both players choose the same shape, it's a tie and the game is usually repeated.
+- If both players choose the same shape, it results in a tie, and the game is typically replayed.
 
 <br>
 
@@ -48,17 +48,29 @@ The winner is determined by the following rules:
 
 <sub>image source: [Know Your Meme](https://knowyourmeme.com/photos/1363025-dwayne-the-rock-johnson)</sub> -->
 
-The game is quick and straightforward, making it popular for settling small disputes or as a decision-making tool where an impartial result is needed. <br> This version of the game is played between a human player and a \'computer\' that randomly picks one of the three possible hands. The objective and rules are essentially the same as playing against another human. The player aims to select a gesture that defeats the computer's gesture according to the game rules.
+The game is quick and straightforward, making it popular for resolving minor disputes or as a tool for impartial decision-making.
 
-There is however one aspect that is different when playing against a computer: in this case, the computer's choice is completely random, meaning it has no memory of previous games or patterns. This means that each of the three choices (Rock, Paper or Scissors) has an equal probability (1/3) of being selected.
+In this version, the game is played between a human player and a 'computer' that randomly selects one of the three possible hand gestures. The objective and rules remain the same as when playing against another person: the player must choose a gesture that defeats the computer's choice according to the game's rules.
+
+However, there is one key difference when playing against the computer: the computer's choice is entirely random. It has no memory of previous games or patterns, and each of the three options—Rock, Paper, or Scissors—has an equal probability of being selected.
 
 ### How to Play
 
-- The human player selects of of the 3 buttons representing the 3 available hands (Rock, Paper, or Scissors).
-- After making their choice they can hit the play button and a countdown will start.
-- At the end of the countdown, the computer's randomly selected hand is revealed and the winner is determined according to the rules above unless there's a tie.
+1. The human player selects one of the three buttons representing the available hand gestures (Rock, Paper, or Scissors).
 
-<img src="./src/assets/images/screenshots/sequence/sequence_0.png" alt="" width="350">&nbsp;<img src="./src/assets/images/screenshots/sequence/sequence_1.png" alt="" width="350">&nbsp;<img src="./src/assets/images/screenshots/sequence/sequence_2.png" alt="" width="350">&nbsp;<img src="./src/assets/images/screenshots/sequence/sequence_3.png" alt="" width="350">&nbsp;<img src="./src/assets/images/screenshots/sequence/sequence_5.png" alt="" width="350">&nbsp;<img src="./src/assets/images/screenshots/sequence/sequence_6.png" alt="" width="350">
+<img src="./src/assets/images/screenshots/sequence/sequence_0.png" alt="" width="350">&nbsp;<img src="./src/assets/images/screenshots/sequence/sequence_1.png" alt="" width="350">
+
+<br>
+
+2. After making their choice, they click the play button, initiating a countdown.
+
+<img src="./src/assets/images/screenshots/sequence/sequence_2.png" alt="" width="350">&nbsp;<img src="./src/assets/images/screenshots/sequence/sequence_3.png" alt="" width="350">
+
+<br>
+
+3. At the end of the countdown, the computer's randomly selected hand is revealed, and the winner is determined according to the game's rules, unless there is a tie.
+
+<img src="./src/assets/images/screenshots/sequence/sequence_5.png" alt="" width="350">&nbsp;<img src="./src/assets/images/screenshots/sequence/sequence_6.png" alt="" width="350">
 
 ## <a name="deployment-link"></a> 2. Deployment Link
 
@@ -71,24 +83,24 @@ There is however one aspect that is different when playing against a computer: i
 
 #### Getting Started
 
-- In order to clone the repository, you need to have [Git](https://git-scm.com/) installed on your local machine.
-- To clone the repository to your local machine, run the following command in your terminal:
+- Ensure [Git](https://git-scm.com/) is installed on your machine.
+- Clone the repository by running this command in your terminal:
 
 ```zsh
-git clone https://github.com/username/repository-name.git
+git clone git@github.com:katieloesch/rock-paper-scissors-react.git
 ```
 
-- you'll be ready to install the dependencies once you navigate into the project directory:
+- Navigate to the project directory to install dependencies:
 
 ```zsh
 cd rock-paper-scissors-react
 ```
 
-#### Running the Application Locally in a local development environment:
+### Running the Application Locally in a local development environment:
 
 **1. Install Dependencies**
 
-- Before running the application, ensure that all necessary dependencies are installed by executing the following terminal command in the root of the project directory:
+- Run the following command in the project’s root directory to install all necessary dependencies:
 
 ```zsh
 npm install
@@ -96,7 +108,7 @@ npm install
 
 **2. Start the Development Server**
 
-- Once the dependencies are installed, start the development server with the following command:
+- After installing the dependencies, start the development server with:
 
 ```zsh
 npm start
@@ -104,9 +116,9 @@ npm start
 
 **3. Access the Application**
 
-- The development server will start on `http://localhost:3000`.
-- By default, your default web browser should automatically open and navigate to this address.
-- If the browser window does not open automatically, you can manually access the application by navigating to `http://localhost:3000` in any web browser.
+- The development server will start at `http://localhost:3000`.
+- By default, your web browser should automatically open and navigate to this address.
+- If it doesn’t, you can manually access the application by entering `http://localhost:3000` in any web browser.
 
 ## <a name="technologies"></a> 4. Technologies Used
 
@@ -154,6 +166,7 @@ npx create-react-app .
     - <sub>Google Fonts: https://fonts.google.com/specimen/Cute+Font</sub>
 
 - **Icons**
+
   - **Iconify**
     - <sub>free and open-source framework providing access to a vast number of icons designed to be used across different platforms and environments, including React</sub>
     - <sub>homepage: https://icon-sets.iconify.design/</sub>
@@ -213,95 +226,81 @@ npx create-react-app .
 - **YouTube**
   - <sub>[Build React Rock Paper Scissors with React](https://www.youtube.com/watch?v=llrk6Jcq4m4) by [Telmo Sampaio](https://www.youtube.com/@Telmosampaio)</sub>
 
----
-
-<!--
-
 ## <a name="deliverables"></a> 5. Deliverables
 
-### MVP
+### MVP (Minimum Viable Product)
 
-- a working game hosted online
-- a git repository hosted on Github, including:
-
-  - a link to the hosted game
-  - frequent commits dating back to the very beginning of the project
-  - code that is well-formatted and well-commented
-  - semantic markup for HTML and CSS while adhering to best practices
-  - adherence to KISS (Keep It Simple Stupid) and DRY (Don't Repeat Yourself) principles
-
-- a rock, paper, scissors game with the following features:
-
-  - visually display the computer hand and player hand
-  - player gets to pick from 3 differrent options: rock, paper or scissors
-  - generate random hand for computer
-  - compare hands and determine winner
-  - notify player if he's won, lost or if there's a draw
-
-- the website should also:
-  - include contact information -> email, GitHub, LinkedIn and other relevant links
-  - have a mobile-responsive design
+- A fully functional game hosted online.
+- A Git repository on GitHub, including:
+  - A link to the hosted game.
+  - Regular commits tracking the project’s progress from the beginning.
+  - Clean, well-formatted, and well-commented code.
+  - Semantic HTML and CSS markup, following best practices.
+  - Adherence to KISS (Keep It Simple, Stupid) and DRY (Don’t Repeat Yourself) principles.
+- A Rock-Paper-Scissors game featuring:
+  - Visual representation of both the computer's and the player's hand.
+  - Player choice between three options: Rock, Paper or Scissors.
+  - Random generation of the computer’s hand.
+  - Comparison of hands to determine the winner.
+  - Player notifications indicating a win, loss, or draw.
+- The website should also:
+  - Include contact information such as email, GitHub, LinkedIn, and other relevant links.
+  - Feature a mobile-responsive design.
 
 ### Potential Extra Features
 
-- score board to keeping track of wins and losses
-- use localStorage to persist data locally
-- include audio + mute mode
-- inventive styling (e.g. hover effects, animations)
-- multiple players
+- A scoreboard to track wins and losses.
+- Audio integration with a mute option.
+- Creative styling elements (e.g., hover effects, animations).
 
 ### User Stories
 
+- As a user, I should be able to select a hand.
 - As a user, I should be able to start a new game.
+- As a user, I should be able to see whether I’ve won, lost, or if it’s a draw.
 - As a user, I should be able to play the game again without refreshing the page.
 
 ## <a name="planning"></a>6. Planning / Build Process
 
-This was a solo project I built over the course of 3 days.
+This was a solo project that I completed over the course of four non-consecutive days.
 
-### Day 1 - 01/02/2024
+#### Day 1 - 01/02/2024
 
-I started this project by setting up a react app using the 'create-react-app' command.
+I began by setting up a React app using the `create-react-app` command and organising a `components` folder to store all the necessary React components for the game.
 
 ```zsh
 npx create-react-app .
 ```
 
-- After removing unnecessary files from the newly created project, I made a 'components' folder to store all the different react components needed for the game.
-
-- I created repository on GitHub and connected it to the local project.
-- started building JSX compnents + styling
-- started game logic
-
-- I also created a wireframe on Excalidraw to get an idea of the basic layout of the website.
+Next, I created a repository on GitHub and linked it to the local project. I focused on developing the core game logic and created a wireframe to visualize the basic layout of the website. Additionally, I built the first few JSX components and applied some basic styling.
 
 <img src="./src/assets/images/wireframe.jpg" alt="wireframe" width="600">
 
-### Day 2 - 02/02/2024
+#### Day 2 - 02/02/2024
 
-- start readme file
-- finish game logic
-- add score board
-- mirror icon images so they 'face each other'
+On the second day, I completed the game logic and added scoreboards to track the player’s and computer’s wins. I also wanted the hand icons for the player and computer to "face each other," so I mirrored the scissors and rock icons depending on whether they were chosen by the computer or player. Additionally, I integrated custom fonts and started drafting the README file for the project.
 
-### Day 24/07/2024
+#### Day 3 - Day 23/07/2024
 
-- media queries
+On the third day, I finalized the styling and added contact icons to the bottom of the page.
+
+#### Day 4 - Day 24/07/2024
+
+On the final day, I focused on implementing media queries to ensure the app was mobile-responsive and completed the README.
 
 ## 7. <a name="challenges"></a> Challenges
 
-- mirror icon images so they 'face each other'
+Mirroring the icons so they would "face each other" proved a bit tricky at first. However, I found useful information on [Stack Overflow](https://stackoverflow.com/questions/23899718/scale-and-mirror-svg-object) and ultimately decided to directly alter the SVG code, using two separate icons per hand rather than relying solely on SCSS.
 
 ## 8. <a name="wins"></a> Wins
 
-- game logic
-- timeframe
+I aimed to complete this project within a 5-7 day window and successfully adhered to that timeline.
 
 ## <a name="takeaways"></a> 9. Key Learnings & Takeaways
 
-- although I enjoyed building this project with React.js I don't think this version of the project is a huge improvement on the vanilla Javascript version as the game features are very similar.
+While I enjoyed building this project with React.js, I feel that this version doesn’t significantly improve upon the original vanilla JavaScript version, as the game’s features remain quite similar.
 
 ## <a name="future-improvements"></a> 10. Future Improvements
 
-- option for multiple players
-- sound effects + animations -->
+- Option for multiplayer mode
+- Sound effects and animations
