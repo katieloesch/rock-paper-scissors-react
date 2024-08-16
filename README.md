@@ -1,6 +1,6 @@
 # Rock, Paper, Scissors in React
 
- <img src="./src/assets/images/rock_paper_scissors_literal.png" alt="literal rock, paper and scissors" width="300">
+ <img src="./src/assets/images/rock_paper_scissors_literal.png" alt="literal rock, paper and scissors" width="350">
  
  <sub>image source: [RemptonGames](https://remptongames.com/2018/02/17/cut-crush-and-cover-the-strategies-of-rock-paper-scissors/)</sub>
 
@@ -276,7 +276,7 @@ Next, I created a repository on GitHub and linked it to the local project. I foc
 
 <br>
 
-<img src="./src/assets/images/wireframe.jpg" alt="wireframe" width="600">
+<img src="./src/assets/images/wireframe.jpg" alt="wireframe" width="550">
 
 #### Day 2 - 02/02/2024
 
