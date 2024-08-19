@@ -1,6 +1,6 @@
 # Rock, Paper, Scissors in React
 
- <img src="./src/assets/images/rock_paper_scissors_literal.png" alt="literal rock, paper and scissors" width="350">
+ <img src="./src/assets/images/rock_paper_scissors_literal.png" alt="literal rock, paper and scissors" width="375">
  
  <sub>image source: [RemptonGames](https://remptongames.com/2018/02/17/cut-crush-and-cover-the-strategies-of-rock-paper-scissors/)</sub>
 
@@ -21,7 +21,7 @@
 
 ## <a name="description"></a> 1. Description
 
-<img src="./src/assets/images/screenshots/rps_1.png" alt="project screenshot" width="350">&nbsp;<img src="./src/assets/images/screenshots/player_wins_2.png" alt="project screenshot" width="350">&nbsp;<img src="./src/assets/images/screenshots/draw_1.png" alt="project screenshot" width="350">&nbsp;<img src="./src/assets/images/screenshots/computer_wins_2.png" alt="project screenshot" width="350">
+<img src="./src/assets/images/screenshots/rps_1.png" alt="project screenshot" width="375">&nbsp;<img src="./src/assets/images/screenshots/player_wins_2.png" alt="project screenshot" width="375">&nbsp;<img src="./src/assets/images/screenshots/draw_1.png" alt="project screenshot" width="375">&nbsp;<img src="./src/assets/images/screenshots/computer_wins_2.png" alt="project screenshot" width="375">
 
 This is a single-player adaptation of the classic hand game Rock-Paper-Scissors. The original version of this game was one of the first programs I developed when I began learning to code using Vanilla JavaScript. To deepen my understanding of JavaScript frameworks and libraries, I decided to enhance the original by incorporating a graphical user interface.
 
@@ -44,7 +44,7 @@ The outcome is determined by these simple rules:
 
 <sub>image source: [Wikipedia](https://en.wikipedia.org/wiki/Rock_paper_scissors#/media/File:Rock-paper-scissors.svg)</sub>
 
-<img src="./src/assets/images/the_rock_vs_paper.jpg" alt="Dwayne 'the Rock' Johnson vs scissors vs paper meme" width="240">
+<img src="./src/assets/images/the_rock_vs_paper.jpg" alt="Dwayne 'the Rock' Johnson vs scissors vs paper meme" width="280">
 
 <sub>image source: [Know Your Meme](https://knowyourmeme.com/photos/1363025-dwayne-the-rock-johnson)</sub>
 
@@ -78,8 +78,8 @@ However, there is one key difference when playing against the computer: the comp
 
 #### Package Manager: npm (v9.5.0)
 
-- <sub>homepage: https://www.npmjs.com/</sub>
-- <sub>GitHub repo: https://github.com/npm</sub>
+- <sub>[website](https://www.npmjs.com/)</sub>
+- <sub>[GitHub Repository](https://github.com/npm)</sub>
 
 #### Getting Started
 
@@ -93,7 +93,7 @@ git clone git@github.com:katieloesch/rock-paper-scissors-react.git
 - Navigate to the project directory to install dependencies:
 
 ```zsh
-cd rock-paper-scissors-react
+cd rock-paper-scissors-react-react
 ```
 
 ### Running the Application Locally in a local development environment:
@@ -128,8 +128,8 @@ npm start
 
   - <sub>primary framework used to build the application</sub>
   - <sub>created using the create-react-app tool</sub>
-  - <sub>React docs: https://reactjs.org/</sub>
-  - <sub>Create React App docs: https://create-react-app.dev/</sub>
+  - <sub>[React documentation](https://reactjs.org/)</sub>
+  - <sub>[Create React App documentation](https://create-react-app.dev/)</sub>
 
 <br>
 
@@ -139,85 +139,85 @@ npx create-react-app .
 
 - **SCSS**
   - <sub>CSS preprocessor used for styling the application</sub>
-  - <sub>docs: https://sass-lang.com/guide</sub>
+  - <sub>[SCSS documentation](https://sass-lang.com/guide)</sub>
 
 ### Key Dependencies
 
 - **Sass** (v1.77.8)
 
   - <sub>CSS preprocessor used for styling the application</sub>
-  - <sub>npm: https://www.npmjs.com/package/sass</sub>
-  - <sub>GitHub repo: https://github.com/sass/dart-sass</sub>
+  - <sub>[npm page](https://www.npmjs.com/package/sass)</sub>
+  - <sub>[GitHub repository](https://github.com/sass/dart-sass)</sub>
 
 - **React Icons** (v5.2.1)
-  - <sub>free and open-source project providing icons for use in React projects</sub>
-  - <sub>npm: https://www.npmjs.com/package/react-icons</sub>
-  - <sub>GitHub repo: https://github.com/react-icons/react-icons</sub>
-  - <sub>homepage: https://react-icons.github.io/react-icons/</sub>
+  - <sub>a free and open-source project providing icons for use in React projects</sub>
+  - <sub>[npm page](https://www.npmjs.com/package/react-icons)</sub>
+  - <sub>[GitHub repository](https://github.com/react-icons/react-icons)</sub>
+  - <sub> [website](https://react-icons.github.io/react-icons/)</sub>
 
 ### UI and Design
 
 - **Fonts**
 
-  - main font: \'Handlee\', designed by Joe Prince
-    - <sub>Cufon Fonts: https://www.cufonfonts.com/font/handlee</sub>
-    - <sub>Google Fonts: https://fonts.google.com/specimen/Handlee</sub>
-  - timer font: \'Cute Font\', designed by TypoDesign Lab. Inc.
-    - <sub>Google Fonts: https://fonts.google.com/specimen/Cute+Font</sub>
+  - main: \'**Handlee**\', designed by **Joe Prince**
+    - <sub>[Cufon Fonts](https://www.cufonfonts.com/font/handlee)</sub>
+    - <sub>[Google Fonts](https://fonts.google.com/specimen/Handlee)</sub>
+  - timer: \'**Cute Font**\', designed by **TypoDesign Lab. Inc.**
+    - <sub>[Google Fonts](https://fonts.google.com/specimen/Cute+Font)</sub>
 
 - **Icons**
 
   - **Iconify**
-    - <sub>free and open-source framework providing access to a vast number of icons designed to be used across different platforms and environments, including React</sub>
-    - <sub>homepage: https://icon-sets.iconify.design/</sub>
-    - <sub>GitHub Repo: https://github.com/iconify/iconify/tree/main</sub>
-    - <sub>license: https://github.com/iconify/iconify/blob/main/license.txt</sub>
+    - <sub>A free and open-source framework providing access to a vast number of icons, designed for use across various platforms and environments, including React.</sub>
+    - <sub>[website](https://icon-sets.iconify.design/)</sub>
+    - <sub>[GitHub repository](https://github.com/iconify/iconify/tree/main)</sub>
+    - <sub>[license](https://github.com/iconify/iconify/blob/main/license.txt)</sub>
   - **Font Awesome**
-    - <sub>icon library providing a large set of icons that are easy to use, scalable and customizable, including a free version that is open source</sub>
-    - <sub>homepage: https://fontawesome.com/</sub>
-    - <sub>GitHub repo: https://github.com/FortAwesome/Font-Awesome</sub>
-    - <sub>license: https://fontawesome.com/license/free</sub>
+    - <sub>A popular icon library offering a large set of scalable and customizable icons, with a free version that is open source.</sub>
+    - <sub>[website](https://fontawesome.com/)</sub>
+    - <sub>[GitHub repository](https://github.com/FortAwesome/Font-Awesome)</sub>
+    - <sub>[license](https://fontawesome.com/license/free)</sub>
   - **React Icons**
-    - <sub>free and open-source project providing icons for use in React projects</sub>
-    - <sub>npm: https://www.npmjs.com/package/react-icons</sub>
-    - <sub>GitHub repo: https://github.com/react-icons/react-icons</sub>
-    - <sub>homepage: https://react-icons.github.io/react-icons/</sub>
+    - <sub>A free and open-source project providing icons for use in React projects.</sub>
+    - <sub> [website](https://react-icons.github.io/react-icons/)</sub>
+    - <sub>[GitHub repository](https://github.com/react-icons/react-icons)</sub>
+    - <sub>[license](https://github.com/react-icons/react-icons/blob/master/LICENSE)</sub>
 
 ### Development Tools
 
 - **Git / GitHub**
 
   - <sub>used for version control and collaboration</sub>
-  - <sub>Git: https://git-scm.com/</sub>
-  - <sub>GitHub: https://github.com/</sub>
+  - <sub>[Git website](https://git-scm.com/)</sub>
+  - <sub>[GitHub website](https://github.com/)</sub>
 
 - **Visual Studio Code (VSCode)**
 
   - <sub>code editor used for development</sub>
-  - <sub>homepage: https://code.visualstudio.com/</sub>
-  - <sub>GitHub repo: https://github.com/microsoft/vscode</sub>
+  - <sub>[website](https://code.visualstudio.com/)</sub>
+  - <sub>[GitHub repository](https://github.com/microsoft/vscode)</sub>
 
 - **Google Chrome & Chrome DevTools**
 
   - <sub>used for testing, debugging, and developing in the browser</sub>
-  - <sub>Google Chrome: https://www.google.com/chrome/</sub>
-  - <sub>Chrome DevTools: https://developer.chrome.com/docs/devtools</sub>
+  - <sub>[Google Chrome website](https://www.google.com/chrome/)</sub>
+  - <sub>[Chrome DevTools documentation](https://developer.chrome.com/docs/devtools)</sub>
 
 - **Excalidraw**
 
   - <sub>tool used to create wireframes for the application</sub>
-  - <sub>homepage: https://excalidraw.com/</sub>
-  - <sub>GitHub repo: https://github.com/excalidraw/excalidraw</sub>
+  - <sub>[website](https://excalidraw.com/)</sub>
+  - <sub>[GitHub repository](https://github.com/excalidraw/excalidraw)</sub>
 
 - **ChatGPT4o**:
 
-  - <sub>generative AI tool used for debugging and development support</sub>
-  - <sub>homepage: https://chat.openai.com/</sub>
-  - <sub>GitHub repo: https://github.com/openai</sub>
+  - <sub>generative AI tool used for debugging, development support and generating artwork for the README file</sub>
+  - <sub>[website](https://chat.openai.com/)</sub>
+  - <sub>[GitHub repository](https://github.com/openai)</sub>
 
 - **Hostinger**:
   - <sub>web hosting provider used to deploy the application</sub>
-  - <sub>UK homepage: https://www.hostinger.co.uk</sub>
+  - <sub>[UK website](https://www.hostinger.co.uk)</sub>
 
 ### Resources & Tutorials
 
